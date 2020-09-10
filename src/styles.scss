@@ -4,9 +4,30 @@
 html,
 body {
     height: 100%;
+    background-color: rgb(250, 251, 253);
 }
 
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.bs-linebreak {
+    height: 20px;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+table {
+    width: 100% !important;
+}
+
+table th {
+    text-transform: capitalize !important;
+}
+
+.btn {
+    text-transform: uppercase !important;
 }

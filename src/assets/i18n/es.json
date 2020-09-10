@@ -1,0 +1,35 @@
+{
+    "TITLE": {
+        "hello": "hola",
+        "persons": "personas"
+    },
+    "TABLE": {
+        "name": "nombre",
+        "created": "antigüedad",
+        "email": "email",
+        "document": "documento",
+        "PAGINATOR": {
+            "items-pare-page": "registros por pagina"
+        }
+    },
+    "FORM": {
+        "ADDCUSTOMER": {
+            "firstname": "nombre",
+            "lastname": "apellido",
+            "email": "email",
+            "document": "documento"
+        }
+    },
+    "BUTTONS": {
+        "register": "registrar",
+        "save": "guardar",
+        "open-file": "subir documento"
+    },
+    "ERRORS": {
+        "FORMS": {
+            "required": "El campo {{file}} es requerido.",
+            "min-length": "El campo {{file}} tiene que ser mayor a 3 digitos.",
+            "email": "El campo email esta mal formado."
+        }
+    }
+}
