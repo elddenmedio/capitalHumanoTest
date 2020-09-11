@@ -8,6 +8,8 @@ import { CommonLocalModule } from 'src/app/_modules';
 import { PublicComponent } from './public.component';
 import { TableCustomerComponent } from 'src/app/_components/public';
 
+import { CustomersService } from 'src/app/_services';
+
 @NgModule({
   declarations: [
     PublicComponent,
@@ -18,6 +20,9 @@ import { TableCustomerComponent } from 'src/app/_components/public';
     PublicRoutingModule,
 
     CommonLocalModule
+  ],
+  providers: [
+    CustomersService
   ]
 })
 export class PublicModule { }

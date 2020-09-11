@@ -9,9 +9,14 @@ import { MaterialModule } from './material.module';
 
 import { PageNotFoundComponent } from '../_components/generals';
 
+import { TranslateComponentService, StorageLocalService } from '../_services';
+
+import { MomentLocalPipe } from 'src/app/_pipes';
+
 @NgModule({
   declarations: [
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MomentLocalPipe
   ],
   imports: [
     CommonModule,
@@ -36,9 +41,12 @@ import { PageNotFoundComponent } from '../_components/generals';
     HttpClientModule,
     MaterialModule,
 
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MomentLocalPipe
   ],
   providers: [
+    TranslateComponentService,
+    StorageLocalService
   ]
 })
 export class CommonLocalModule { }
