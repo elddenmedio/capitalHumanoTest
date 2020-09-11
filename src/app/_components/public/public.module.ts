@@ -9,11 +9,13 @@ import { PublicComponent } from './public.component';
 import { TableCustomerComponent } from 'src/app/_components/public';
 
 import { CustomersService } from 'src/app/_services';
+import { FormAddCustomerComponent } from './form-add-customer/form-add-customer.component';
 
 @NgModule({
   declarations: [
     PublicComponent,
-    TableCustomerComponent
+    TableCustomerComponent,
+    FormAddCustomerComponent
   ],
   imports: [
     CommonModule,

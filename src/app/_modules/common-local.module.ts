@@ -9,7 +9,7 @@ import { MaterialModule } from './material.module';
 
 import { PageNotFoundComponent } from '../_components/generals';
 
-import { TranslateComponentService, StorageLocalService } from '../_services';
+import { TranslateComponentService, StorageLocalService, CloseModalService } from '../_services';
 
 import { MomentLocalPipe } from 'src/app/_pipes';
 
@@ -46,7 +46,8 @@ import { MomentLocalPipe } from 'src/app/_pipes';
   ],
   providers: [
     TranslateComponentService,
-    StorageLocalService
+    StorageLocalService,
+    CloseModalService
   ]
 })
 export class CommonLocalModule { }

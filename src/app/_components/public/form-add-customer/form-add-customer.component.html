@@ -1,0 +1,64 @@
+<form [formGroup]="form" (ngSubmit)="addCustomer()">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-4">
+                    <mat-form-field class="">
+                        <input matInput placeholder="{{ 'FORM.ADDCUSTOMER.firstname' | translate }}" formControlName="firstname" autocomplete="off" type="text" required>
+                        <mat-error *ngIf="f.firstname.errors?.required">
+                            {{ 'ERRORS.FORMS.required' | translate:{'file':'FORM.ADDCUSTOMER.firstname' | translate} }}
+                        </mat-error>
+                        <mat-error *ngIf="f.firstname.errors?.minlength">
+                            {{ 'ERRORS.FORMS.min-length' | translate:{'file':'FORM.ADDCUSTOMER.firstname' | translate} }}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div class="col-4">
+                    <mat-form-field class="">
+                        <input matInput placeholder="{{ 'FORM.ADDCUSTOMER.lastname' | translate }}" formControlName="lastname" autocomplete="off" type="text" required>
+                        <mat-error *ngIf="f.lastname.errors?.required">
+                            {{ 'ERRORS.FORMS.required' | translate:{'file':'FORM.ADDCUSTOMER.lastname' | translate} }}
+                        </mat-error>
+                        <mat-error *ngIf="f.lastname.errors?.minlength">
+                            {{ 'ERRORS.FORMS.min-length' | translate:{'file':'FORM.ADDCUSTOMER.lastname' | translate} }}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div class="col-4">
+                    <mat-form-field class="">
+                        <input matInput placeholder="{{ 'FORM.ADDCUSTOMER.email' | translate }}" formControlName="mail" autocomplete="off" type="email" [email]="true" required>
+                        <!-- pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" -->
+                        <mat-error *ngIf="f.mail.errors?.required">
+                            {{ 'ERRORS.FORMS.required' | translate:{'file':'FORM.ADDCUSTOMER.email' | translate} }}
+                        </mat-error>
+                        <mat-error *ngIf="f.mail.errors?.email">
+                            {{ 'ERRORS.FORMS.email' | translate }}
+                        </mat-error>
+                        <!-- <mat-error *ngIf="f.mail.errors?.pattern">
+                            {{ 'ERRORS.FORMS.email' | translate }}
+                        </mat-error> -->
+                    </mat-form-field>
+                </div>
+
+                <div class="col-12 bs-linebreak"></div>
+                <div class="col-12 bs-linebreak"></div>
+
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <button mat-raised-button (click)="openBottomSheet()"><span class="material-icons">
+                                attach_file
+                                </span>{{ 'BUTTONS.open-file' | translate }}</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary float-right" value="{{ 'BUTTONS.save' | translate }}" [disabled]="!form.valid">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
