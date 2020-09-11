@@ -1,3 +1,49 @@
+# FIRST
+
+The first step is clone repo to local
+
+# SECOND
+
+After clone repo to local, you need to change your path into the project and exec `npm i` to install all npm dependencies
+
+# THIRD
+
+Exec `ng serve` to exec local and open `http://localhost:4200`
+
+# SYSTEM
+
+# 1
+The system will automatically detects that if the browser has some info in Storage to add it on TOP of the user´s list, else only the users gived by the API are displayed
+![picture](resources/1.png)
+
+# 2
+
+The info are displayed in materialTable with paginator, if you want to display more rows than default or paginete you only need to make click on the correct button
+![picture](resources/2.png)
+![picture](resources/3.png)
+
+# 3
+
+Here are the create user formValidator
+![picture](resources/4.png)
+![picture](resources/5.png)
+
+# 4
+
+After create the first new user, it was stored on sessionStorage and added on tableList on top of it.
+![picture](resources/6.png)
+
+# 5
+
+If you want to add more users, they will be add on top but inorder to added.
+![picture](resources/7.png)
+
+# 6
+
+The button add file display a modal that can let you choose fom upload file or select file from other place.
+![picture](resources/8.png)
+
+
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
