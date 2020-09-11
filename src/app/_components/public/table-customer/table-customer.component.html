@@ -8,8 +8,7 @@
 
         <ng-container matColumnDef="created">
             <th mat-header-cell *matHeaderCellDef> {{ "TABLE.created" | translate }} </th>
-            <td mat-cell *matCellDef="let element"> {{ element.created }} </td>
-            <!-- | momentLocal:1 -->
+            <td mat-cell *matCellDef="let element"> {{ element.created | momentLocal:1 }} </td>
         </ng-container>
 
         <ng-container matColumnDef="email">
